@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  private apiURL = 'http://localhost:8080'; // Cambia la URL base según tu configuración
+  private apiURL = 'ravishing-love-production.up.railway.app'; // Cambia la URL base según tu configuración
 
   httpOptions = {
     headers: new HttpHeaders({
