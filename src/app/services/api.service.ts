@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  private apiURL = 'ravishing-love-production.up.railway.app'; // Cambia la URL base según tu configuración
+  private apiURL = 'tfgftubol.up.railway.app'; // Cambia la URL base según tu configuración
 
   httpOptions = {
     headers: new HttpHeaders({
