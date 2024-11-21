@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  private apiURL = 'tfgftubol.up.railway.app'; // Cambia la URL base según tu configuración
+  private apiURL = 'springboot-production-d5f4.up.railway.app'; // Cambia la URL base según tu configuración
 
   httpOptions = {
     headers: new HttpHeaders({
