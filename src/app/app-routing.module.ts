@@ -32,7 +32,6 @@ const routes: Routes = [
   // Ruta para dashboard y sus rutas hijas
   { 
     path: 'dashboard', 
-    component: DashboardComponent,  // Componente contenedor para las vistas hijas
     children: [
       { path: 'admin', component: AdminDashboardComponent },
       { path: 'user', component: UserDashboardComponent }
