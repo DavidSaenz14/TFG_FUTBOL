@@ -13,7 +13,7 @@ import { ArbitrosComponent } from './components/arbitros/arbitros.component';
 import { EstadiosComponent } from './components/estadios/estadios.component';
 import { PartidoComponent } from './components/partido/partido.component';
 import { ClasificacionComponent } from './components/clasificacion/clasificacion.component';
-import { DashboardComponent } from './dashboard/dashboard.component';  // Añadido el componente contenedor
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
