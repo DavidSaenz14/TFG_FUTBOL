@@ -14,13 +14,20 @@ import { EstadiosComponent } from './components/estadios/estadios.component';
 import { PartidoComponent } from './components/partido/partido.component';
 import { ClasificacionComponent } from './components/clasificacion/clasificacion.component';
 
-
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'unauthorized', component: UnauthorizedComponent },
+  { path: 'admin-dashboard', component: AdminDashboardComponent },
+  { path: 'user-dashboard', component: UserDashboardComponent },
+  { 
+    path: 'dashboard', 
+    children: [
+      { path: 'admin', component: AdminDashboardComponent },
+      { path: 'user', component: UserDashboardComponent }
+    ] 
+  },
   { path: 'equipos', component: EquiposComponent },
   { path: 'jugadores', component: JugadoresComponent },
   { path: 'competiciones', component: CompeticionComponent },
@@ -28,15 +35,7 @@ const routes: Routes = [
   { path: 'arbitros', component: ArbitrosComponent },
   { path: 'estadios', component: EstadiosComponent },
   { path: 'partidos', component: PartidoComponent },
-
-  // Ruta para dashboard y sus rutas hijas
-  { 
-    path: 'dashboard', 
-    children: [
-      { path: 'admin', component: AdminDashboardComponent },
-      { path: 'user', component: UserDashboardComponent }
-    ]
-  }
+  { path: 'unauthorized', component: UnauthorizedComponent },
 ];
 
 @NgModule({
